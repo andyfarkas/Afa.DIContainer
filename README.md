@@ -1,5 +1,6 @@
 Afa.DIContainer
 ===============
+[![Build Status](https://travis-ci.org/andyfarkas/Afa.DIContainer.png?branch=master)](https://travis-ci.org/andyfarkas/Afa.DIContainer)
 
 Simple dependency injection container supporting autowiring. Using the container is super simple. To resolve a type just
 ask for it:
