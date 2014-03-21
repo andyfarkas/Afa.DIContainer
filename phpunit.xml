@@ -9,7 +9,7 @@
          syntaxCheck="false"
         >
     <testsuites>
-        <testsuite name="Core tests">
+        <testsuite name="DIContainer Tests">
             <directory suffix="Tests.php">./*</directory>
         </testsuite>
     </testsuites>

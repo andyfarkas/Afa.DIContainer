@@ -126,4 +126,19 @@ class ContainerTests extends \PHPUnit_Framework_TestCase
         $this->assertSame($instance, $resolved);
     }
 
+    /**
+     * @test
+     */
+    public function registerProvider_WhenCalled_RegistersDependenciesProvider()
+    {
+        $container = $this->createContainer();
+        $providerMock = $this->getMock('Afa\DIContainer\IProvider');
+        $providerMock->expects($this->once())
+                    ->method('register')
+                    ->with($container);
+
+        $container->registerProvider($providerMock);
+    }
+
+
 }

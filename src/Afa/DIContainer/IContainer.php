@@ -25,4 +25,10 @@ interface IContainer
      * @param object $instance
      */
     public function bindTypeToInstance($type, $instance);
+
+    /**
+     * @param IProvider $provider
+     */
+    public function registerProvider(IProvider $provider);
+
 }

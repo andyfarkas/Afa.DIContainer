@@ -148,4 +148,12 @@ class Container implements IContainer
         $this->createdInstances[$type] = $instance;
     }
 
+    /**
+     * Registers a provider that configures the container
+     * @param IProvider $provider
+     */
+    public function registerProvider(IProvider $provider)
+    {
+        $provider->register($this);
+    }
 }
